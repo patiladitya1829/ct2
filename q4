@@ -1,0 +1,13 @@
+#include <stdio.h>
+// Write a program to find area of circle using function.
+float area1(int a)
+{
+    return 3.14*a*a;
+}
+int main() {
+    int radius ;
+    printf(" Enter Radius of circle: " );
+    scanf("%d", &radius);
+    printf("Area of circle with radius %d is %.2f\n", radius, area1(radius));
+    return 0;
+}
