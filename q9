@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[5] = {10, 20, 30, 40, 50};
+    int *p;
+
+    p = arr;   // pointer to first element
+
+    printf("Initial address: %u\n", p);
+
+    // Increment
+    p++;
+    printf("After p++ (increment): %u\n", p);
+
+    // Decrement
+    p--;
+    printf("After p-- (decrement): %u\n", p);
+
+    // Addition
+    p = p + 2;
+    printf("After p+2 (addition): %u\n", p);
+
+    // Subtraction
+    p = p - 1;
+    printf("After p-1 (subtraction): %u\n", p);
+
+    return 0;
+}
