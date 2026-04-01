@@ -1,0 +1,39 @@
+#include <stdio.h>
+// Write a program to declare structure employee having data members name,
+// age, street and city. Accept data for two employees and display it.
+struct employee
+{
+    char name [100];
+    int age;
+    char street [100];
+    char city [15];
+};
+int main() 
+{
+    struct employee emp[2];
+    int i;
+    for(i=0;i<2;i++)
+    {
+        printf("Enter data for employee %d\n",i+1);
+        printf("Enter name: ");
+        scanf("%s",emp[i].name);
+
+        printf("Enter age :");
+        scanf("%d",&emp[i].age);
+
+        printf("Enter street :");
+        scanf("%s",emp[i].street);
+
+        printf(" Enter city :");
+        scanf("%s",emp[i].city);
+    }
+    for(i=0;i<2;i++) 
+    {
+        printf("Data of employee %d\n",i+1);
+        printf("Name :%s\n",emp[i].name);
+        printf("Age :%d\n",emp[i].age);
+        printf("Street :%s\n",emp[i].street);
+        printf("City :%s\n",emp[i].city);
+    }
+    return 0;
+}
